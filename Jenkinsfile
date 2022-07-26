@@ -20,7 +20,7 @@ pipeline {
           stage('Image Push') {
           agent { label 'DOCKER' }
 			steps {
-				sh 'docker push rajanikanthraju/gol_dev:v1.0'
+				sh 'docker push rajanikanthraju/gol_fea:v1.0'
 			}
 		}
        stage('Deploying image to K8s cluster') {
