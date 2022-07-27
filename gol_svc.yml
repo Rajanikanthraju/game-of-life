@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: development
+  name: uat
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: goldeploy
-  namespace: development
+  namespace: uat
   labels:
     app: golsvc
   annotations:
@@ -25,7 +25,7 @@ spec:
         version: v1.2
     spec:
       containers:
-        - image: rajanikanthraju/gol_dev:v1.1
+        - image: rajanikanthraju/gol_fea:v1.1
           name: golsvc
           ports:
             - containerPort: 8080
@@ -36,7 +36,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gol-svc
-  namespace: development
+  namespace: uat
   labels:
     job: nodeport
 spec:
