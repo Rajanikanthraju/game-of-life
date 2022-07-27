@@ -8,7 +8,7 @@ pipeline {
             agent { label 'DOCKER' }
             steps('Docker build') {
                 
-                sh 'docker build --no-cache -t rajanikanthraju/gol_prod:v1.0 .'
+                sh 'docker build --no-cache -t rajanikanthraju/gol_prod:v1.1 .'
                                   }
               }
             stage('DockerHub Login') {
