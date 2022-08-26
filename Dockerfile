@@ -4,5 +4,5 @@
 #building deployment image
 FROM tomcat:8.5.82-jdk8-temurin-focal 
 LABEL author=Rajanikanth
-COPY /home/jenkins/jenkins_work/workspace/gol_demo/gameoflife-web/target/gameoflife.war  /usr/local/tomcat/webapps/gameoflife.war
+COPY target/*.war /usr/local/tomcat/webapps/*.war
 EXPOSE 8080
