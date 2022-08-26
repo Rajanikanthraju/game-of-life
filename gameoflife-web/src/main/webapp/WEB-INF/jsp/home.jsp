@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-<h2>Welcome to Conway's Game Of Life!!!!!!</h2>
+<h1>Welcome to Conway's Game Of Life!!!!!!</h1>
     <h2> This is test!!!!</h2>
 
 <div class="intro">
